@@ -9,18 +9,18 @@ class Sql extends PDO { // herda a classe PDO que é uma classe nativa.
 
 	}
 
-	private function setParams($statment, $parameters = array()){
+	private function setParams($statement, $parameters = array()){
 
 			foreach ($parameters as $key => $value) {
 
-				$this->setParam ($key, $value);
+				$this->setParam($statement, $key, $value);
 		}
 
 	}
 
-	private function setParam($statament, $key, $value){// realiza o bindparam de um elemento
+	private function setParam($statement, $key, $value){// realiza o bindparam de um elemento
 
-		$statament->bindParam($key, $value);
+		$statement->bindParam($key, $value);
 
 	}
 
