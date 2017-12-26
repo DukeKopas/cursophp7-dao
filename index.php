@@ -39,11 +39,21 @@ echo json_encode($usuarios);*/
 
 //Modifica um usuário
 
+//$usuario = new Usuario();
+
+//$usuario->loadById(6);
+
+//$usuario->update("Professor Caralho", "qwerty123");
+
+//echo $usuario;
+
+//Deleta um usuário
+
 $usuario = new Usuario();
 
 $usuario->loadById(6);
 
-$usuario->update("Professor Caralho", "qwerty123");
+$usuario->delete();
 
 echo $usuario;
 
