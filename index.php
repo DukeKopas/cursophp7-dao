@@ -21,10 +21,31 @@ echo json_encode($usuarios);*/
 //echo json_encode($user);
 
 //Autentica usuário e senha
-$login = new Usuario();
-$login->login("Joao","qwert");
+//$login = new Usuario();
+//$login->login("AlunoTonto","tilambucano123");
+//echo $login;
 
-echo $login;
+//Insere um novo usuário
+
+//$aluno = new Usuario("Aluno Bobo", "ZikZira123");
+
+//$aluno -> setDeslogin("AlunoTonto");
+
+//$aluno -> setDessenha("tilambucano123");
+
+//$aluno -> insert();
+
+//echo $aluno;
+
+//Modifica um usuário
+
+$usuario = new Usuario();
+
+$usuario->loadById(6);
+
+$usuario->update("Professor Caralho", "qwerty123");
+
+echo $usuario;
 
  ?>
 
